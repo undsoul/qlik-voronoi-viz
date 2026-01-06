@@ -1,0 +1,15 @@
+{
+    "name": "Voronoi Viz",
+    "description": "Interactive weighted Voronoi treemap visualization for Qlik Sense - displays hierarchical data with organic cell shapes where area represents value",
+    "type": "visualization",
+    "version": "24.6.0",
+    "author": "MuchachoAI",
+    "icon": "puzzle",
+    "preview": "",
+    "keywords": "voronoi, treemap, visualization, hierarchy, d3",
+    "homepage": "https://github.com/anthropics/claude-code",
+    "license": "MIT",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    }
+}

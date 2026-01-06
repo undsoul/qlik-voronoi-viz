@@ -1,0 +1,156 @@
+/**
+ * qlik-voronoi-style.css
+ * Styles for Voronoi Treemap Extension
+ */
+
+/* Main container */
+.voronoi-treemap-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Message styling */
+.voronoi-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 200px;
+    text-align: center;
+    color: #666;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* Loading spinner */
+.voronoi-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 200px;
+}
+
+.voronoi-loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4A90D9;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: voronoi-spin 1s linear infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes voronoi-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.voronoi-loading-text {
+    color: #666;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/* Cell styles */
+.voronoi-cell {
+    transition: fill-opacity 0.15s ease, stroke-width 0.15s ease;
+}
+
+.voronoi-cell:hover {
+    stroke-width: 2.5px;
+}
+
+/* Label styles */
+.voronoi-label {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.voronoi-value {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Tooltip styles */
+.voronoi-tooltip {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.5;
+    transition: opacity 0.2s ease;
+}
+
+.voronoi-tooltip strong {
+    font-weight: 600;
+}
+
+/* Selection states */
+.voronoi-cell.selected {
+    stroke-width: 3px;
+}
+
+.voronoi-cell.dimmed {
+    fill-opacity: 0.3;
+    stroke-opacity: 0.2;
+}
+
+/* Group boundary styles */
+.voronoi-group-boundary {
+    fill: none;
+    stroke-dasharray: 4, 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .voronoi-label {
+        font-size: 10px !important;
+    }
+
+    .voronoi-value {
+        font-size: 8px !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .voronoi-cell {
+        stroke-width: 2px !important;
+    }
+
+    .voronoi-label,
+    .voronoi-value {
+        text-shadow: none !important;
+        font-weight: bold !important;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .voronoi-cell {
+        transition: none;
+    }
+
+    .voronoi-loading-spinner {
+        animation: none;
+        border-top-color: #4A90D9;
+    }
+
+    .voronoi-tooltip {
+        transition: none;
+    }
+}
+
+/* Print styles */
+@media print {
+    .voronoi-tooltip {
+        display: none !important;
+    }
+
+    .voronoi-cell {
+        stroke-width: 0.5px !important;
+    }
+}
