@@ -19,7 +19,9 @@
       "Bash(git push)",
       "Bash(grep:*)",
       "Bash(xargs cat:*)",
-      "Bash(/Users/onderaltinbilek/Documents/QlikCodeHouse/qlik-voronoi-diagram-repo/qlik-voronoi-diagram/qlik-voronoi-*.js)"
+      "Bash(/Users/onderaltinbilek/Documents/QlikCodeHouse/qlik-voronoi-diagram-repo/qlik-voronoi-diagram/qlik-voronoi-*.js)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)"
     ]
   }
 }

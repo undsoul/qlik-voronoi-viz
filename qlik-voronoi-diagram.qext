@@ -7,7 +7,7 @@
     "icon": "puzzle",
     "preview": "",
     "keywords": "voronoi, treemap, visualization, hierarchy, d3",
-    "homepage": "https://github.com/anthropics/claude-code",
+    "homepage": "https://github.com/undsoul/qlik-voronoi-viz",
     "license": "MIT",
     "dependencies": {
         "qlik-sense": ">=3.0.x"
