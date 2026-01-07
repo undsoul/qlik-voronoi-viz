@@ -15,7 +15,6 @@ Transform hierarchical data into organic visualizations where **cell area repres
 - **Master Item Colors** - Automatic color sync from Qlik master dimensions
 - **Interactive Selection** - Click to filter across your app
 - **Smart Labels** - Auto-sizing with contrast detection
-- **Qlik Cloud Ready** - Works on Desktop and Cloud
 
 ## Installation
 
