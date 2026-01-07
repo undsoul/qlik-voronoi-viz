@@ -6,6 +6,9 @@
 [![Qlik Sense](https://img.shields.io/badge/Qlik%20Sense-%3E%3D3.0-green.svg)](https://www.qlik.com)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
+<img width="1036" height="741" alt="image" src="https://github.com/user-attachments/assets/c031889e-af0d-480a-811c-4a042c5915d5" />
+
+
 Transform hierarchical data into organic visualizations where **cell area represents data values**. Unlike rectangular treemaps, Voronoi treemaps use natural curved boundaries for intuitive data exploration.
 
 ## Features
